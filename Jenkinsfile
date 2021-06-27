@@ -29,8 +29,8 @@ pipeline{
 	 	 sh "scp -o StrictHostKeyChecking=no target/maven-stanalone-application-0.0.1-SNAPSHOT.jar centos@3.236.45.157:/home/centos/axisservice" 
 		 Script{
 			chmod -R 755 *.jar
-			 }
-		 	}
+		 }
+		 }
 		 }
 	 }	  
   }
