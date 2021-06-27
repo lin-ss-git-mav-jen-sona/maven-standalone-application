@@ -1,5 +1,8 @@
 pipeline{
-agent any  // any === meanas execute it in  master 
+  agent any  // any === meanas execute it in  master 
+  tools{
+		maven 'maven 3.8.1'
+	}
   stages{
     stage('checkpout scm'){
       steps{
