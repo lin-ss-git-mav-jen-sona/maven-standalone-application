@@ -12,7 +12,7 @@ pipeline{
      stage('build'){
       steps{
         sh "mvn clean package"
-	stash includes: 'target/*.jar', name 'aa'
+	stash includes: 'target/*.jar', name: 'aa'
       }
        post{
 	       success{
