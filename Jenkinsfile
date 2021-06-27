@@ -22,7 +22,6 @@ pipeline{
 		       echo 'buils is failed'
 	       }
        }
-      }
      }
   }
 }
