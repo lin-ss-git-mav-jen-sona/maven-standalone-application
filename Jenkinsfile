@@ -12,7 +12,17 @@ pipeline{
      stage('build'){
       steps{
         sh "mvn clean package"
+	stach includes: 'target/*.jar', name 'aa'
       }
-    }
+       post{
+	       sucess{
+		       echo'build is sucess'
+	       }
+	       failure{
+		       echo 'buils is failed'
+	       }
+       }
+      }
+     }
   }
 }
