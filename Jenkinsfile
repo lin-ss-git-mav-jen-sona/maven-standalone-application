@@ -26,7 +26,7 @@ pipeline{
 	stage('deploy'){
 		steps{
 	 	 sshagent(['624215ff-a4fc-438d-940e-6b1cab67c6ab']) {
-	 	 sh "scp -o StrictHostKeyChecking=no target/maven-stanalone-application-0.0.1-SNAPSHOT.jar centos:3.236.45.157:/home/centos/axisservice" 
+	 	 sh "scp -o StrictHostKeyChecking=no target/maven-stanalone-application-0.0.1-SNAPSHOT.jar centos@3.236.45.157:/home/centos/axisservice" 
 		 	}
 		 }
 	 }	  
